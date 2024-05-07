@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+.header {
+    padding: 16px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 16px;    
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    margin-right: 83px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.nav {
+    font-weight: 700;
+    color: #1C1B1B;
+}
+
+.logo {
+    margin-right: 370px;
+}
+
+.header__icons-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.introduction {
+    background: #F0EFEB;
+}
+.introduction__text-block {
+    max-width: 525px;    
+    padding: 90px 0;
+}
+
+.introduction__container {
+    display: flex;
+    }
+
+.introduction__title {
+    font-size: 60px;
+    line-height: 70px;    
+    margin-bottom: 42px;
+}
+
+.introduction__text {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 26px;    
+}
+
+.introduction__button {
+    color: #FFFFFF;
+    background: #000000;
+    font-size: 17px;  
+    line-height: 20px;
+    padding: 8px 23px;
+    cursor: pointer;
+    border-radius: 100px; 
+}
+.introduction__image {
+    width: 600px;
+    height: 600px;
+}
+
+.people, .politics {
+    background: #CCCCCC4D;
+}
+
+.culture {
+background: #CCCCCC99;
+}
+
+.people__title, .politics__title, .culture__title {
+    margin-bottom: 31px;
+}
+
+.people__text, .politics__text, .culture__text {
+    margin-bottom: 40px;
+}
+
+.people__title, .people__text, .politics__title, .politics__text, .culture__title, .culture__text {
+    font-size: 36px;
+    line-height: 42.19px; 
+}
+
+.link {
+    color: #000000;
+    font-size: 17px;
+    line-height: 19.92px;
+    font-weight: 700;    
+}
+
+.people__container, .politics__container, .culture__container {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.peopleIcon, .politicsIcon, .cultureIcon {
+    width: 385px;
+    height: 525px;
+    top: 0.05px;
+    left: 100px;
+}
+
+.article__society {
+    width: 532px;
+    height: 510.88px;
+    top: 7.13px;
+    left: 535px;
+    margin-left: 50px;
+    margin-bottom: 58px;
+    padding-top: 60px;
+}
+
+.article__culture {
+    text-align: right;
+    margin-right: 50px;
+}
