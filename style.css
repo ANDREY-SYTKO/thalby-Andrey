@@ -13,6 +13,10 @@ button {
     border: none;
 }
 
+button:active {
+    background-color: hwb(14 0% 0%);
+}
+
 .header {
     padding: 16px 0;
 }
@@ -98,6 +102,11 @@ button {
 background: #CCCCCC99;
 }
 
+.sellers {
+    
+    background: #FFFFFF;
+}
+
 .people__title, .politics__title, .culture__title {
     margin-bottom: 31px;
 }
@@ -106,22 +115,39 @@ background: #CCCCCC99;
     margin-bottom: 40px;
 }
 
-.people__title, .people__text, .politics__title, .politics__text, .culture__title, .culture__text {
+.people__title, .people__text, .politics__title, .politics__text, .culture__title, .culture__text, .sellers__title {
     font-size: 36px;
-    line-height: 42.19px; 
+    line-height: 42.19px;    
+}
+
+.sellers__title {
+    text-align: center; 
+}
+
+.sellers__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    text-align: center;
 }
 
 .link {
     color: #000000;
     font-size: 17px;
     line-height: 19.92px;
-    font-weight: 700;    
+    font-weight: 700;
+    
 }
+
+.link:hover {
+    color: #00B3FF;
+}
+
+
 
 .people__container, .politics__container, .culture__container {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 50px 0;    
 }
 
 .peopleIcon, .politicsIcon, .cultureIcon {
@@ -144,4 +170,32 @@ background: #CCCCCC99;
 .article__culture {
     text-align: right;
     margin-right: 50px;
+}
+
+.sellers__title {
+    margin: 87px 0 52px;
+}
+
+.sellers__text{
+    margin-top: 47px;
+    margin-bottom: 24px;
+}
+
+.best__sellers {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.article__sellers2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    margin:auto;
+}
+.article__sellers2 p {
+    margin-top:10px;
+    font-weight: 700;
 }
