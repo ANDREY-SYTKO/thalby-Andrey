@@ -115,12 +115,12 @@ background: #CCCCCC99;
     margin-bottom: 40px;
 }
 
-.people__title, .people__text, .politics__title, .politics__text, .culture__title, .culture__text, .sellers__title {
+.people__title, .people__text, .politics__title, .politics__text, .culture__title, .culture__text, .sellers__title, .features__text {
     font-size: 36px;
     line-height: 42.19px;    
 }
 
-.sellers__title {
+.sellers__title, .features__text {
     text-align: center; 
 }
 
@@ -198,4 +198,65 @@ background: #CCCCCC99;
 .article__sellers2 p {
     margin-top:10px;
     font-weight: 700;
+}
+
+.features__text {
+    padding: 120px 0 60px;
+}
+
+.circle {    
+    width: 70px;
+    height: 70px;    
+    border-radius: 50%;  
+}
+
+.circle-1 {
+    background: #21F7EC;
+}
+
+.circle-2 {
+    background: #33D3BC;
+}
+
+.circle-3 {
+    background: #18A5C6;
+}
+
+.circle-4 {
+    background: #D38F62;
+}
+
+.circle-5 {
+    background: #F94C43;
+}
+.circle-6 {
+    background: #D399FF;
+}
+
+.circles__container-1, .circles__container-2 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text_circle {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 338.66px;
+    height: 167.5px; 
+}
+
+.text_circle p {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35.16px;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.circles__container-2{
+   margin:70px 0px; 
 }
