@@ -369,13 +369,13 @@ form {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 170px;
+    margin: 0 280px;
 }
 
 .article__footer {
     display:flex;    
     gap: 40px;
-    margin: 70px 20px 0 0;    
+    margin: 70px 0 0 0;    
 }
 
 article li {
