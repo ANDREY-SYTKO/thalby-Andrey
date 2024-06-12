@@ -9,14 +9,6 @@ ul {
     list-style: none;
 }
 
-button {
-    border: none;
-}
-
-button:active {
-    background-color: hwb(14 0% 0%);
-}
-
 .header {
     padding: 16px 0;
 }
@@ -76,22 +68,31 @@ button:active {
 
 .introduction__text {
     font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 26px;    
+    line-height: 28px;    
 }
 
-.introduction__button {
+button {
+    border: none;
+}
+
+button:active {
+    background-color: hwb(14 0% 0%);
+}
+
+.thalby__button {
     color: #FFFFFF;
     background: #000000;
     font-size: 17px;  
     line-height: 20px;
     padding: 8px 23px;
     cursor: pointer;
-    border-radius: 100px; 
+    border-radius: 100px;
+    margin: 20px 0; 
 }
 .introduction__image {
-    width: 600px;
-    height: 600px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 600px;
 }
 
 .people, .politics {
@@ -115,23 +116,35 @@ background: #CCCCCC99;
     margin-bottom: 40px;
 }
 
-.people__title, .people__text, .politics__title, .politics__text, .culture__title, .culture__text, .sellers__title, .features__text {
+.thalby__text{
     font-size: 36px;
-    line-height: 42.19px;    
+    line-height: 42.19px; 
 }
 
-.sellers__title, .features__text {
+.sellers__title, .features__text, .interview__title {
     text-align: center; 
 }
 
-.sellers__text {
+.interview .thalby__text,.features .thalby__text {
+    text-align: center;
+}
+
+.sellers__text, .interview__text-2 {
     font-size: 20px;
     font-weight: 400;
     line-height: 23.44px;
     text-align: center;
 }
 
-.link {
+.interview__text-1 {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.78px;
+    text-align: center;    
+}
+
+.link, .form__text {
     color: #000000;
     font-size: 17px;
     line-height: 19.92px;
@@ -142,8 +155,6 @@ background: #CCCCCC99;
 .link:hover {
     color: #00B3FF;
 }
-
-
 
 .people__container, .politics__container, .culture__container {
     display: flex;
@@ -172,16 +183,15 @@ background: #CCCCCC99;
     margin-right: 50px;
 }
 
-.sellers__title {
+.sellers__title, .interview__title {
     margin: 87px 0 52px;
 }
 
-.sellers__text{
-    margin-top: 47px;
-    margin-bottom: 24px;
+.sellers__text, .interview__text-1, .interview__text-2 {    
+    margin: 47px 0 24px;
 }
 
-.best__sellers {
+.best__sellers, .best__interview {
  display: flex;
  align-items: center;
  justify-content: center;
@@ -194,6 +204,7 @@ background: #CCCCCC99;
     align-items: center;
     width: 10vw;
     margin:auto;
+   
 }
 .article__sellers2 p {
     margin-top:10px;
@@ -208,6 +219,7 @@ background: #CCCCCC99;
     width: 70px;
     height: 70px;    
     border-radius: 50%;  
+    margin-bottom: 26px;
 }
 
 .circle-1 {
@@ -237,26 +249,198 @@ background: #CCCCCC99;
     display:flex;
     justify-content: center;
     align-items: center;
+    gap:15px;
     
+}
+.circles__container-1 {
+    margin-bottom:20px;
+}
+.features{
+    margin-bottom:50px;
+}
+.article__sellers {
+    text-align: center;
+    padding-top:30px;
 }
 
 .text_circle {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 338.66px;
-    height: 167.5px; 
+    align-items: center;    
+    min-width: 338.66px;
 }
 
 .text_circle p {
     font-size: 30px;
     font-weight: 700;
     line-height: 35.16px;
-    text-align: center;
-    margin-top: 26px;
+    text-align: center;    
 }
 
-.circles__container-2{
-   margin:70px 0px; 
+.best__interview {    
+    width: 100%;
+    height: 100%;    
+    margin-bottom: 79px;
+    position: relative;
 }
+
+.best__interview::after { 
+    content: '';
+    width: 100%;
+    height: 68%;
+    background: #F0F0F0;
+    display: flex;
+    position: absolute;
+    bottom:0;
+    top: 32%;
+    left: 0;
+    z-index: -1;
+    padding-top:30px;
+}
+
+.features .thalby__text{
+    padding:50px;
+}
+
+.interview .thalby__text{
+    padding-bottom: 50px;
+}
+
+.article__form {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+form input {
+    border: 1px solid #000000;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    padding-left: 7px;
+}
+
+form {
+    display: flex;
+    justify-content: center;   
+    align-items: center;  
+    flex-direction: column;   
+}
+
+.first__join_input{
+    display:flex;
+    align-items: center;
+    gap:50px;
+}
+
+.email__type_input{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email__type_input input{
+    width: 350px;
+    margin-top:20px;
+}
+
+.img__footer {
+    display:flex;
+    flex-direction: column;    
+    align-items: center;        
+}
+
+.img__nets {        
+    margin-top: 40px;    
+    display:flex;
+    gap: 20px;
+}
+
+.footer {    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.footer__container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 280px;
+}
+
+.article__footer {
+    display:flex;    
+    gap: 40px;
+    margin: 70px 0 0 0;    
+}
+
+article li {
+    margin-bottom: 10px;
+}
+
+.p1-footer {
+    margin-bottom: 35px;    
+}
+
+.p2-footer {        
+    text-align: center;
+    padding: 40px 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .seller-1, .seller-2, .seller-3 {
+        max-width: 20vw;
+        width: 100%;        
+    } 
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        display: none;        
+    }
+
+    .introduction__container {
+        flex-direction: column;
+    }
+
+    .introduction__text-block {
+        padding: 20px 0;        
+        max-width: 100%;
+    }
+
+    .introduction__title {
+        font-size: 30px;
+        line-height: 35px;    
+        margin-bottom: 22px;
+    }
+
+    .thalby__text{
+        font-size: 20px;
+        line-height: 20px; 
+    }
+
+    .cultureIcon, .peopleIcon, .politicsIcon {
+        max-width: 20vw;
+        height: 20vh;    
+    }
+
+    .best__interview {        
+        flex-direction: column;       
+        background-color: #FFFFFF;        
+    }
+
+    .text_circle {        
+        min-width: 50px;
+    }  
+
+    .footer__container {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;        
+    }
+    }
